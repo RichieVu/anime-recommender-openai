@@ -12,8 +12,8 @@ export default function Home() {
     event.preventDefault();
     try {
       const prompt = useAnimeName
-        ? "Suggest three anime that have all the genres."
-        : "Suggest three anime that are similar to the input but are not the same.";
+        ? "not switched"
+        : "switched";
   
       const response = await fetch("/api/generate", {
         method: "POST",

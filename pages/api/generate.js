@@ -32,7 +32,7 @@ export default async function (req, res) {
     const completion = await openai.createCompletion({
       model: "text-davinci-003",
       prompt,
-      temperature: 0.6,
+      temperature: 0.4,
     });
     res.status(200).json({ result: completion.data.choices[0].text });
   } catch(error) {
@@ -54,7 +54,7 @@ function generatePrompt(promptType, input) {
   const capitalizedInput =
     input[0].toUpperCase() + input.slice(1).toLowerCase();
   if (promptType == "switched") {
-    return `Suggest three anime that are similar to the input but are not the same.
+    return `Suggest three anime that are similar to the input but is NOT the same anime to the input.
 
 Input: ${capitalizedInput}
 Names:`;
