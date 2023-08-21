@@ -3,6 +3,7 @@
 
 Anime Recommender is a tool that uses OpenAI API to recommend anime based on inputted genres or recommend an anime that is similar an inputted anime.
 
+![](https://github.com/RichieVu/anime-recommender-openai/blob/main/public/demo.gif)
 
 
 
@@ -28,6 +29,10 @@ The app employs the GPT-3 language model from OpenAI to understand user preferen
 3) Run ```npm install```
 4) Run ```npm run dev```
 5) Go to http://localhost:3000
+## Roadmap
+* [x] Recommending similar anime
+* [ ] Generate anime descriptions
+* [ ] Link with MAL API for anime taste profile
 ## Acknowledgements
 
  - [OpenAI API](https://openai.com/)
